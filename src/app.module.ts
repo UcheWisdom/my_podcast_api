@@ -4,11 +4,11 @@ import { AppService } from './app.service';
 import { EpisodesModule } from './episodes/episodes.module';
 import { TopicsModule } from './topics/topics.module';
 import { ConfigModule } from './config/config.module';
-import { EposidesController } from './eposides/eposides.controller';
+import { EpisodesController } from './episodes/episodes.controller';
 
 @Module({
   imports: [EpisodesModule, TopicsModule, ConfigModule],
-  controllers: [AppController, EposidesController],
+  controllers: [AppController, EpisodesController],
   providers: [AppService],
 })
 export class AppModule {}
